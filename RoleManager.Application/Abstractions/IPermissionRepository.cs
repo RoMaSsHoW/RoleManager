@@ -1,6 +1,6 @@
 ﻿using RoleManager.Domain.Entities;
 
-namespace RoleManager.Application.Repositories
+namespace RoleManager.Application.Abstractions
 {
     public interface IPermissionRepository
     {

@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using RoleManager.Application.Repositories;
+using RoleManager.Application.Abstractions;
 using RoleManager.Domain.Entities;
 
 namespace RoleManager.Api.Controllers

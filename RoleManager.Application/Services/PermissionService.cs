@@ -1,4 +1,4 @@
-﻿using RoleManager.Application.Repositories;
+﻿using RoleManager.Application.Abstractions;
 
 namespace RoleManager.Application.Services
 {

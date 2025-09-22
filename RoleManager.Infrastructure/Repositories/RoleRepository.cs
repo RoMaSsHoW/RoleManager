@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using RoleManager.Application.Repositories;
+using RoleManager.Application.Abstractions;
 using RoleManager.Domain.Entities;
 using RoleManager.Infrastructure.Data;
 
