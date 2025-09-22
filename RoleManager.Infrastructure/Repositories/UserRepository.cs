@@ -19,6 +19,9 @@ namespace RoleManager.Infrastructure.Repositories
             return await _context.Users
                 .Include(u => u.UserRoles)
                 .ThenInclude(ur => ur.Role)
+                .ThenInclude(r => r.RolePermissions)
+                .ThenInclude(rp => rp.Permission)
+                .AsNoTracking()
                 .FirstOrDefaultAsync(u => u.Id == id);
         }
 

@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using RoleManager.Application.Repositories;
+using RoleManager.Application.Services;
 using RoleManager.Infrastructure.Data;
 using RoleManager.Infrastructure.Repositories;
 
@@ -37,8 +38,7 @@ namespace RoleManager.Api.Extentions
 
         private static void ConfigureServices(IServiceCollection services)
         {
-            //services.AddScoped<IAuthorService, AuthorService>();
-            //services.AddScoped<IFileStorageService, FileStorageService>();
+            services.AddScoped<IPermissionService, PermissionService>();
         }
     }
 }
